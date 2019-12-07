@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityA"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/contentform"
+        layout="@layout/content_form" />
+
+    <Button
+        android:id="@+id/btn_send_to_activity_using_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send data to activity using Intent" />
+
+
+    <Button
+        android:id="@+id/btn_send_to_activity_using_bundle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send data to activity using Bundle" />
+
+    <Button
+        android:id="@+id/btn_send_to_fragment_using_bundle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send data to Fragment using bundle" />
+
+    <Button
+        android:id="@+id/launch_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="launch_fragment" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container" />
+
+
+</LinearLayout>

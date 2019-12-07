@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListViewActivity">
+
+
+    <ListView
+        android:id="@+id/disp_list"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/btn_updateSingleItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disp_list"
+        android:text="Update Single Item" />
+
+    <Button
+        android:id="@+id/btn_moveSingleItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disp_list"
+        android:layout_toEndOf="@id/btn_updateSingleItem"
+        android:text="Move Single Item" />
+
+    <Button
+        android:id="@+id/btn_removeMultipleItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_updateSingleItem"
+        android:layout_alignParentStart="true"
+        android:text="Remove Multiple Item" />
+
+    <Button
+        android:id="@+id/btn_replace_with_new_List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_moveSingleItem"
+        android:layout_toEndOf="@id/btn_removeMultipleItem"
+        android:text="Replace old list with new List" />
+
+
+</RelativeLayout>
